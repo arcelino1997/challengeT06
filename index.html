@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Codificador e Decodificador</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="home__logo" href="index.html"><img class="logo" src="logoalura.png" alt="Logo Alura"></a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="section1">
+            <textarea class="entrada__texto"  cols="20" rows="10" type="text" id="entrada__texto" placeholder="Digite seu texto"></textarea>
+            <div class="area__botoes">
+                <div class="aviso__letras">Apenas letras minúsculas e sem acento</div>
+                <div class="entrada__botoes">
+                    <input type="button" id="criptografar" class="codificar" value="Criptografar"></input>
+                    <input type="button" id="descriptografar" class="decodificar" value="Descriptografar"></input>
+                </div>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="div__saida">
+                <output id="saida__texto" class="saida__texto"></output>
+                <button id="copiar" class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="rodape__texto">Developer by Arcelino Santos.</p>
+        <p class="rodape__texto">Turma 06 Oracle Next Education.</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
